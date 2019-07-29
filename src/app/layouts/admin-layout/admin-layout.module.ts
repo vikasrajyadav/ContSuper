@@ -11,6 +11,7 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { ActivityDetailsComponent } from '../../table-list/activity-details/activity-details.component';
+import { ActivityDetailsService } from '../../table-list/activity-details/activity-details.service';
 
 import {
   MatButtonModule,
@@ -42,6 +43,9 @@ import {
     MapsComponent,
     NotificationsComponent,
     ActivityDetailsComponent,
+  ],
+  providers : [
+    ActivityDetailsService
   ]
 })
 

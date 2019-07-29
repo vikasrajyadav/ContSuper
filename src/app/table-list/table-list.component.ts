@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivityDetailsService } from './activity-details/activity-details.service';
 
 @Component({
   selector: 'app-table-list',
@@ -252,13 +253,14 @@ export class TableListComponent implements OnInit {
   }
 ]
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private activityDetailService: ActivityDetailsService) { }
 
   ngOnInit() {
   }
 
   gotoActivityDetail(data) {
     console.log(data);
+    this.activityDetailService.activityData = data;
     this.router.navigate(['table-list/activity-details']);
   }
 

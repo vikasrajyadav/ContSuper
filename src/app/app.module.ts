@@ -22,7 +22,6 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { SpceComponent } from './spce/spce.component';
-import { ActivityDetailsComponent } from './table-list/activity-details/activity-details.component';
 
 @NgModule({
   imports: [
